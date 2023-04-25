@@ -1,6 +1,6 @@
 **Structure Of The AimsProject:**
-	<sub>
-  ├── AimsProject
+```
+├── AimsProject
 │   ├── README.md
 │   ├── bin
 │   ├── lib
@@ -13,5 +13,5 @@
 │       ├── Main.class
 │       └── Main.java
 └── Design
-
-  </sub>
+```
+  
