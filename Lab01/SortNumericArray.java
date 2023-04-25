@@ -29,5 +29,6 @@ public class SortNumericArray {
         // Printing sorted array, sum and average
         System.out.println("Sorted array: " + Arrays.toString(arr));
         System.out.println("Sum of array elements: " + sum);
-        System.out.printf("Average of array elements: %.2f", avg);}
+        System.out.printf("Average of array elements: %.2f", avg);
+    }
 }
