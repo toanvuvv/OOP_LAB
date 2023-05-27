@@ -7,9 +7,7 @@ public class Main {
                 "Science Fiction", "George Lucas", 87, 24.95f);
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin",
                 "Animation", 18.99f);
-        anOrder.addDigitalVideoDisc(dvd1);
-        anOrder.addDigitalVideoDisc(dvd2);
-        anOrder.addDigitalVideoDisc(dvd3);
+        anOrder.addDigitalVideoDisc(dvd1, dvd2, dvd3);
         System.out.println("Total Cost is: " + anOrder.totalCost());
 
         // Testing removeDigitalVideoDisc method

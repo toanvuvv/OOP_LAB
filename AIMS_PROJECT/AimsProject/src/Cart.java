@@ -10,7 +10,16 @@ public class Cart {
         itemsOrdered[qtyOrdered++] = disc;
         System.out.println("The disc has been added");
     }
+    
+ 
+    // addDigitalVideoDisc method which allows to pass an arbitrary number of arguments for dvd
+    public void addDigitalVideoDisc(DigitalVideoDisc... dvdList) {
+        for (DigitalVideoDisc disc : dvdList) {
+            addDigitalVideoDisc(disc);
+        }
+    }
 
+    
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         for (int i = 0; i < qtyOrdered; i++) {
             if (itemsOrdered[i].equals(disc)) {  // Xoá disc trong list
