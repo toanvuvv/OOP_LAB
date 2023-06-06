@@ -1,3 +1,4 @@
+package disc;
 public class TestPassingParameter {
     public static void main(String[] args) {
         DigitalVideoDisc jungleDVD = new DigitalVideoDisc("Jungle");
@@ -20,6 +21,6 @@ public class TestPassingParameter {
     public static void changeTitle(DigitalVideoDisc dvd, String title) {
         String oldTitle = dvd.getTitle();
         dvd.setTitle(title);
-        title = oldTitle;
+        dvd = new DigitalVideoDisc(oldTitle);
     }
 }
