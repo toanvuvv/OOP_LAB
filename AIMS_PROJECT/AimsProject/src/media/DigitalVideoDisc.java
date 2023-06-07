@@ -1,4 +1,4 @@
-package disc;
+package media;
 
 public class DigitalVideoDisc {
     private static int nbDigitalVideoDiscs = 0;

@@ -1,7 +1,7 @@
 package cart;
 import java.util.Scanner;
 
-import disc.DigitalVideoDisc;
+import media.DigitalVideoDisc;
 
 import java.util.NoSuchElementException;
 

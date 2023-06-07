@@ -1,7 +1,7 @@
 package store;
 import java.util.Vector;
 
-import disc.DigitalVideoDisc;
+import media.DigitalVideoDisc;
 
 public class Store {
     private Vector<DigitalVideoDisc> itemsInStore = new Vector<DigitalVideoDisc>();

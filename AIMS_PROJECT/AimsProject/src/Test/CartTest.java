@@ -1,7 +1,8 @@
-package cart;
+package Test;
 import java.util.Scanner;
 
-import disc.DigitalVideoDisc;
+import cart.Cart;
+import media.DigitalVideoDisc;
 public class CartTest {
         public static void main(String[] args) {
                 // Create a new cart
