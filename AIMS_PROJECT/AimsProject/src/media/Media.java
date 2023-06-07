@@ -2,13 +2,20 @@ package media;
 import java.lang.Object;
 public class Media {
     
-    private int id;
-    private String title;
-    private String category;
-    private float cost;
+    public int id;
+    public String title;
+    public String category;
+    public float cost;
+
     
     // Constructor
     public Media(int id, String title, String category, float cost) {
+        this.id = id;
+        this.title = title;
+        this.category = category;
+        this.cost = cost;
+    }
+    public Media() {
         this.id = id;
         this.title = title;
         this.category = category;
