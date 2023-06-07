@@ -1,6 +1,4 @@
 package Test;
-import java.util.Scanner;
-
 import cart.Cart;
 import media.DigitalVideoDisc;
 public class CartTest {
