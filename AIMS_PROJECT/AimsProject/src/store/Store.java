@@ -1,26 +1,48 @@
 package store;
 import java.util.Vector;
-
 import media.DigitalVideoDisc;
-
+import media.Media;
+import java.util.ArrayList;
+import java.util.Scanner;
+import javax.print.FlavorException;
 public class Store {
-    private Vector<DigitalVideoDisc> itemsInStore = new Vector<DigitalVideoDisc>();
+    private ArrayList<Media> itemsInStore = new ArrayList<Media>();
+
     public Store() {
-        
+
     }
-    public void addDVD(DigitalVideoDisc dvd) {
-        if (itemsInStore.add(dvd)) {
-            System.out.println("The disc has been added to Store!");
-        } else {
-            System.out.println("The disc is almost full!");
+
+    public boolean addMedia(Media media) {
+        if (itemsInStore.contains(media)) {
+            System.out.println("The media is already exist");
+            return false;
+        }
+        itemsInStore.add(media);
+        return true;
+    }
+
+    public boolean removeMedia(Media media) {
+        if (itemsInStore.contains(media)) {
+            itemsInStore.remove(media);
+            return true;
+        }
+        System.out.println("The media is not exist");
+        return false;
+    }
+
+    public void printStore() {
+        System.out.println("Store");
+        for (Media media : itemsInStore) {
+            System.out.println(media.toString());
         }
     }
 
-    public void removeDVD(DigitalVideoDisc dvd) {
-        if (itemsInStore.remove(dvd)) {
-            System.out.println("The disc has been removed from Store!");
-        } else {
-            System.out.println("The disc is not in the store!");
+    public Media searchStore(String st) {
+        for (Media media : itemsInStore) {
+            if (media.isMatch(st)) {
+                return media;
+            }
         }
+        return null;
     }
 }
