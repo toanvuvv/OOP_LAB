@@ -105,6 +105,7 @@ public class Aims {
             storeMenu();
             Scanner input = new Scanner(System.in);
             int choice = input.nextInt();
+            input.close();
             if (choice == 1) {
                 System.out.print("Enter title of media: ");
                 input.nextLine();

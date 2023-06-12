@@ -1,10 +1,9 @@
 package store;
-import java.util.Vector;
-import media.DigitalVideoDisc;
+
 import media.Media;
+
 import java.util.ArrayList;
-import java.util.Scanner;
-import javax.print.FlavorException;
+
 public class Store {
     private ArrayList<Media> itemsInStore = new ArrayList<Media>();
 
