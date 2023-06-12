@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class CompactDisc extends Disc implements Playable {
     private String artist;
-    private ArrayList<Track> tracks;
+    private ArrayList<Track> tracks; // 5.3s
 
     public String getArtist() {
         return artist;
@@ -42,6 +42,7 @@ public class CompactDisc extends Disc implements Playable {
         return l;
     }
 
+    // implement play() method
     @Override
     public void play() {
         System.out.println("Artist: " + this.getArtist());
