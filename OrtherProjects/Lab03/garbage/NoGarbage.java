@@ -1,4 +1,4 @@
-package OrtherProjects.Lab03.GarbageCollection;
+package OrtherProjects.Lab03.garbage;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
