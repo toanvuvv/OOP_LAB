@@ -1,18 +1,25 @@
 package screen;
 
-import cart.Cart;
-import media.*;
+//import Aims;
+import media.Media;
+import media.Playable;
+
 import javax.swing.*;
+
+import Main.Aims;
+
+//import Aims class for me
+
+
+
 import java.awt.*;
 
 public class MediaStore extends JPanel {
     private Media media;
-
     public MediaStore(Media media) {
         this.media = media;
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
-
-        JLabel title = new JLabel(media.getTitle());
+        JLabel title= new JLabel(media.getTitle());
         title.setFont(new Font("Arial", Font.BOLD, 20));
         title.setAlignmentX(CENTER_ALIGNMENT);
 
@@ -22,20 +29,17 @@ public class MediaStore extends JPanel {
         JPanel container = new JPanel();
         container.setLayout(new FlowLayout(FlowLayout.CENTER));
         JButton btAddToCart = new JButton("Add to cart");
-
-        // btAddToCart.addActionListener(e -> {
-        // Aims.cart.addMedia(this.media);
-        // });
-        // container.add(btAddToCart);
+        btAddToCart.addActionListener(e->{
+            Aims.cart.addMedia(this.media);
+        });
+        container.add(btAddToCart);
 
         JButton btPlay = new JButton("Play");
-        // btPlay.addActionListener(e -> {
-        //     media.play();
-        // });
-
-
-        if (media instanceof Playable) {
-            container.add(new JButton("Play"));
+        btPlay.addActionListener(e -> {
+            media.play();
+        });
+        if(media instanceof Playable) {
+            container.add(btPlay);
         }
 
         this.add(Box.createVerticalGlue());

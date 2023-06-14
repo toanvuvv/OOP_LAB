@@ -2,6 +2,7 @@ package cart;
 import java.util.ArrayList;
 
 import media.Media;
+
 public class Cart {
     private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
 
