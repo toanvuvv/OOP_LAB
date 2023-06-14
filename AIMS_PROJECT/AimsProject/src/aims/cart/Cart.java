@@ -1,7 +1,4 @@
 package cart;
-
-
-
 import java.util.ArrayList;
 
 import media.Media;
