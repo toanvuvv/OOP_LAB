@@ -1,11 +1,13 @@
 package Main;
 
-
 import cart.Cart;
 import media.*;
+import screen.CartScreen;
 import screen.StoreScreen;
 import store.Store;
+
 import java.util.Scanner;
+
 public class Aims {
     public static Store store;
     public static Cart cart;
@@ -18,13 +20,13 @@ public class Aims {
 
     /**
      * Init base data for store
-     * 
+     *
      * @param store
      */
     private static void initData(Store store) {
         store.addMedia(new DigitalVideoDisc("The Lion king", "Animation", "A. Pepter", 120, 20.0f));
         store.addMedia(new DigitalVideoDisc("The shape of water", "Action", "J.Camerron", 145, 14.3f));
-        store.addMedia(new DigitalVideoDisc("The Fallen kingdom", "Action", "Mical Bay", 541, 14.3f));
+        store.addMedia(new DigitalVideoDisc("The Fallen kingdom", "Action", "Mical Bay", 145, 14.3f));
         Book book1 = new Book("This book title", "Scifi", 15.6f);
         book1.addAuthor("Betty");
         book1.addAuthor("Betty's daughter");
@@ -51,7 +53,7 @@ public class Aims {
 
     /**
      * Store interface
-     * 
+     *
      * @param store
      * @param cart  current cart to add media
      */
@@ -108,7 +110,7 @@ public class Aims {
 
     /**
      * Media view to add to cart or play
-     * 
+     *
      * @param res  target media
      * @param cart current cart to add media
      */
@@ -130,7 +132,7 @@ public class Aims {
 
     /**
      * Cart interface
-     * 
+     *
      * @param cart
      */
     private static void handleCartMenu(Cart cart) {
@@ -196,7 +198,7 @@ public class Aims {
 
     /**
      * Use to add or remove media from store. Currently not support add media
-     * 
+     *
      * @param store
      */
     private static void updateStore(Store store) {

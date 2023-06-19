@@ -1,4 +1,8 @@
 package media;
+
+import exception.PlayerException;
+
 public interface Playable {
-    public void play();
+    public void play() throws PlayerException;
+
 }
