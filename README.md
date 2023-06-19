@@ -1,4 +1,4 @@
-**Structure Of The AimsProject:**
+**Structure Of The AimsProject:** 20205173 Vu Duc Toan
 ```
 ├── AIMS_PROJECT
 │   ├── AIMS_PROJECT.iml
